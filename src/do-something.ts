@@ -1,12 +1,11 @@
 import saySomething from "./say-something";
 import saySomethingElse from "./say-something-else";
 
-import { onlyForCondition2 } from "./utils";
+import { onlyForCondition2 } from "../utils";
 
 const doSomething = async (condition: number) => {
   if (condition === 2) {
     const saidSomething = onlyForCondition2(true, saySomething);
-    console.log({ saidSomething });
     if (saidSomething === "something") {
       return "hey i said something";
     }

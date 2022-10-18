@@ -1,10 +1,10 @@
-import doSomething from "../do-something";
-import saySomething from "../say-something";
-import saySomethingElse from "../say-something-else";
-import { onlyForCondition2 } from "../utils";
+import doSomething from "@src/do-something";
+import saySomething from "@src/say-something";
+import saySomethingElse from "@src/say-something-else";
+import { onlyForCondition2 } from "@utils";
 
 // should unmock what you want to test
-jest.unmock("../do-something");
+jest.unmock("@src/do-something");
 
 // this can be
 jest.enableAutomock();
